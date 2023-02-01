@@ -7,10 +7,17 @@ namespace big
 		if (ImGui::BeginTabItem("Other"))
 		{
 			ImGui::Text("Acceleration Multiplier");
-			ImGui::DragFloat("###handling_acceleration", &g_local_player->m_vehicle->m_handling_data->m_acceleration, 1.f, .01f, 10.f);
+			ImGui::DragFloat("###handling_acceleration", &g_local_player->m_vehicle->m_handling_data->m_acceleration, 1.f, 0.f, 50.f);
 
 			ImGui::Text("Downforce Multiplier");
-			ImGui::DragFloat("###handling_downforce", &g_local_player->m_vehicle->m_handling_data->m_downforce_multiplier, 1.f, 0.f, 10.f);
+			ImGui::DragFloat("###handling_downforce", &g_local_player->m_vehicle->m_handling_data->m_downforce_multiplier, 1.f, 0.f, 50.f);
+
+			ImGui::Text("Initial Drive Max Flat Vel");
+			ImGui::DragFloat("###m_initial_drive_max_flat_vel", &g_local_player->m_vehicle->m_handling_data->m_initial_drive_max_flat_vel, 1.f, 0.f, 100.f);
+
+			ImGui::Text("Drive Max Flat Velocity");
+			ImGui::DragFloat("###m_drive_max_flat_velocity", &g_local_player->m_vehicle->m_handling_data->m_drive_max_flat_velocity, 1.f, 0.f, 100.f);
+
 
 			ImGui::Text("Inertia Multiplier");
 			float fInertiaMult[3];

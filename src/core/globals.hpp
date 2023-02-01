@@ -361,7 +361,7 @@ namespace big
 			struct hotkeys
 			{
 				bool editing_menu_toggle = false;
-				int menu_toggle = VK_INSERT;
+				int menu_toggle = VK_F4;
 				int teleport_waypoint = 0;
 				int teleport_objective = 0;
 				int noclip = 0;
@@ -389,8 +389,8 @@ namespace big
 
 		struct spawn_vehicle
 		{
-			bool preview_vehicle = false;
-			bool spawn_inside = false;
+			bool preview_vehicle = true;
+			bool spawn_inside = true;
 			bool spawn_maxed = false;
 			std::string plate = "";
 
@@ -399,8 +399,8 @@ namespace big
 
 		struct clone_pv
 		{
-			bool preview_vehicle = false;
-			bool spawn_inside = false;
+			bool preview_vehicle = true;
+			bool spawn_inside = true;
 			bool spawn_clone = false;
 			bool spawn_maxed = false;
 			bool clone_plate = false;
@@ -497,7 +497,7 @@ namespace big
 				float y = .72f;
 
 				bool enabled = false;
-				bool left_side = false;
+				bool left_side = true;
 
 				NLOHMANN_DEFINE_TYPE_INTRUSIVE(speedo_meter, x, y, enabled, left_side)
 			} speedo_meter{};
@@ -626,11 +626,11 @@ namespace big
 				bool opened = true;
 				bool show_with_menu_opened = false;
 
-				bool show_fps = true;
-				bool show_players = true;
-				bool show_time = true;
-				bool show_replay_interface = true;
-				bool show_game_versions = true;
+				bool show_fps = false;
+				bool show_players = false;
+				bool show_time = false;
+				bool show_replay_interface = false;
+				bool show_game_versions = false;
 
 				NLOHMANN_DEFINE_TYPE_INTRUSIVE(ingame_overlay, opened, show_with_menu_opened, show_fps, show_players, show_time, show_replay_interface, show_game_versions)
 			} ingame_overlay{};
@@ -659,7 +659,7 @@ namespace big
 
 		struct esp
 		{
-			bool enabled = true;
+			bool enabled = false;
 			bool hide_self = true;
 			float global_render_distance[2] = { 0.f, 600.f };
 			float tracer_render_distance[2] = { 200.f, 600.f };
@@ -689,7 +689,7 @@ namespace big
 
 		struct session_browser
 		{
-			bool region_filter_enabled = true;
+			bool region_filter_enabled = false;
 			int region_filter = 0;
 
 			bool language_filter_enabled = false;

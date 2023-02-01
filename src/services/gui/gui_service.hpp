@@ -65,7 +65,7 @@ namespace big
 		std::map<tabs, navigation_struct> nav = {
 			{tabs::SELF, { "Self",view::self, {
 				{ tabs::WEAPONS, { "Weapons", view::weapons }},
-				{ tabs::MOBILE, {"Mobile", view::mobile}},
+				// { tabs::MOBILE, {"Mobile", view::mobile}},
 				{ tabs::TELEPORT, {"Teleport", view::teleport}},
 			}}},
 			{tabs::VEHICLE, { "Vehicle", view::vehicle, {
@@ -80,28 +80,28 @@ namespace big
 				{ tabs::FUN_VEHICLE, { "Fun Features", view::fun_vehicle }},
 			}}},
 			{ tabs::WORLD, { "World", nullptr, {
-				{ tabs::SPAWN_PED, { "Spawn Ped", view::spawn_ped }},
+				// { tabs::SPAWN_PED, { "Spawn Ped", view::spawn_ped }},
 				{ tabs::TIME_AND_WEATHER, { "Time And Weather", view::time_and_weather }},
-				{ tabs::CREATOR, { "Creator", view::creator }},
-				{ tabs::TRAIN, { "Train", view::train }},
-				{ tabs::WATER, { "Water", view::water }},
+				// { tabs::CREATOR, { "Creator", view::creator }},
+				// { tabs::TRAIN, { "Train", view::train }},
+				// { tabs::WATER, { "Water", view::water }},
 		}}},
 			{tabs::NETWORK, { "Network", nullptr, {
-				{ tabs::SPOOFING, { "Spoofing", view::spoofing }},
+				// { tabs::SPOOFING, { "Spoofing", view::spoofing }},
 				{ tabs::SESSION, { "Session", view::session }},
-				{ tabs::MISSIONS, { "Missions", view::missions }},
+				// { tabs::MISSIONS, { "Missions", view::missions }},
 				{ tabs::PLAYER_DATABASE, { "Player Database", view::player_database }},
-				{ tabs::SESSION_BROWSER, { "Session Browser", view::session_browser }},
+				// { tabs::SESSION_BROWSER, { "Session Browser", view::session_browser }},
 			}}},
 			{tabs::SETTINGS, { "Settings", view::settings, {
-				{ tabs::STAT_EDITOR, { "Stat Editor", view::stat_editor}},
-				{ tabs::CONTEXT_MENU_SETTINGS, { "Context Menu", view::context_menu_settings}},
+				// { tabs::STAT_EDITOR, { "Stat Editor", view::stat_editor}},
+				// { tabs::CONTEXT_MENU_SETTINGS, { "Context Menu", view::context_menu_settings}},
 				{ tabs::ESP_SETTINGS, { "ESP", view::esp_settings}},
 				{ tabs::GUI_SETTINGS, { "GUI", view::gui_settings}},
 				{ tabs::HOTKEY_SETTINGS, { "Hotkeys", view::hotkey_settings }},
 				{ tabs::REACTION_SETTINGS, { "Reactions", view::reaction_settings}},
 				{ tabs::PROTECTION_SETTINGS, { "Protection", view::protection_settings}},
-				{ tabs::DEBUG, { "Debug", nullptr }},
+				// { tabs::DEBUG, { "Debug", nullptr }},
 			}}},
 			{tabs::PLAYER, {"", view::view_player}}
 		};

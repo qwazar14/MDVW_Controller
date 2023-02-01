@@ -17,7 +17,7 @@ namespace big
 				g_local_player->m_vehicle->m_handling_data->m_drive_bias_rear = fDriveBiasRear * 2;
 
 			ImGui::Text("Transmission Output (force)");
-			ImGui::SliderFloat("##initial drive force", &g_local_player->m_vehicle->m_handling_data->m_initial_drive_force, 0.01f, 2.f);
+			ImGui::SliderFloat("##initial drive force", &g_local_player->m_vehicle->m_handling_data->m_initial_drive_force, 0.01f, 10.f);
 
 			ImGui::EndTabItem();
 		}

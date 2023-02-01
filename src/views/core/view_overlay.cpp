@@ -15,7 +15,7 @@ namespace big
 
 		if (ImGui::Begin("overlay", nullptr, ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoSavedSettings | ImGuiWindowFlags_NoFocusOnAppearing | ImGuiWindowFlags_NoNav))
 		{
-			ImGui::Text("YimMenu");
+			ImGui::Text("Midnight Vinewood Controller");
 
 			ImGui::Separator();
 

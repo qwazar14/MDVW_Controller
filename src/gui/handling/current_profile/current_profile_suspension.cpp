@@ -7,7 +7,7 @@ namespace big
 		if (ImGui::BeginTabItem("Suspension"))
 		{
 			ImGui::Text("Suspension Force (General Suspension Strength)");
-			ImGui::SliderFloat("##suspension force", &g_local_player->m_vehicle->m_handling_data->m_suspension_force, 0.f, 5.f);
+			ImGui::SliderFloat("##suspension force", &g_local_player->m_vehicle->m_handling_data->m_suspension_force, 0.f, 15.f);
 
 			ImGui::Text("Suspension Compression Damp (Higher = Less Compression)");
 			ImGui::SliderFloat("##suspension comp", &g_local_player->m_vehicle->m_handling_data->m_suspension_comp_damp, 0.f, 5.f);

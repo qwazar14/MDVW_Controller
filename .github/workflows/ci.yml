@@ -29,16 +29,16 @@ jobs:
         run: cmake --build build --config Release --target ALL_BUILD
 
       - name: Check if DLL got built
-        run: if (-Not (Test-Path -path "build/Release/YimMenu.dll")) {throw 1}
+        run: if (-Not (Test-Path -path "build/Release/MDVW_Controller.dll")) {throw 1}
 
-      - name: Rename DLL to YimMenu-dev-{GITHUB_SHA}.dll
+      - name: Rename DLL to MDVW_Controller-dev-{GITHUB_SHA}.dll
         run: |
-          del YimMenu-dev-*.dll
-          ren YimMenu.dll YimMenu-dev-${{github.sha}}.dll
+          del MDVW_Controller-dev-*.dll
+          ren MDVW_Controller.dll MDVW_Controller-dev-${{github.sha}}.dll
         working-directory: build/Release/
 
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
           name: binary
-          path: build/Release/YimMenu-dev-*.dll
+          path: build/Release/MDVW_Controller-dev-*.dll

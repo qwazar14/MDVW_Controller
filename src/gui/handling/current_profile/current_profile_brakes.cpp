@@ -15,7 +15,7 @@ namespace big
 				g_local_player->m_vehicle->m_handling_data->m_brake_bias_front = fBrakeBias * 2;
 
 			ImGui::Text("Hand Brake Force");
-			ImGui::DragFloat("##hand brake force", &g_local_player->m_vehicle->m_handling_data->m_handbrake_force, .01f, 0.f, 10.f);
+			ImGui::DragFloat("##hand brake force", &g_local_player->m_vehicle->m_handling_data->m_handbrake_force, .01f, 0.f, 20.f);
 
 			ImGui::EndTabItem();
 		}
